@@ -9,6 +9,7 @@ amqp.connect(Config.test.url)
       ch.assertQueue(q, {
         durable: true
       });
+      ch.prefetch(1);
       console.log("waiting for message in %s press CTRL + x to exit", q);
       ch.consume(q, function(msg) {
         var sec = msg.content.toString().split('.').length - 1;
