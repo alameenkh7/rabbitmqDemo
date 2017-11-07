@@ -16,8 +16,9 @@ amqp.connect(Config.test.url)
         setTimeout(function() {
           console.log(" [x] Done");
           console.log("this one waited for %d seconds",sec*3000);
+          ch.ack(msg);
         }, sec* 3000);
-      },{noAck :true})
+      },{noAck :false})
     }).catch(Promisemessage.errorMessage)
   })
   .catch(Promisemessage.errorMessage);
