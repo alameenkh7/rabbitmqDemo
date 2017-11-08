@@ -37,7 +37,8 @@ type cd server to go to server directory.
 Testing first set of input and out put file
 
 run 
-node sender.js 
+node sender.js          
+
 node reciever.js 
 
 run both in different terminal . you can see that message send in sender file recieved in reciever file. 
@@ -46,7 +47,8 @@ If you go to rabbitmq management web ui you can see message in respective queue 
 testing second set of input and out put file
 
 run 
-node newtask.js <yourmessage>.....         
+node newtask.js <yourmessage>.....
+  
 node worker.js
 
 here you can see that message will wait for the no of '.' after your message and 
@@ -56,6 +58,7 @@ testing third set of input and out put file
 
 run 
 node fanoutinput.js
+
 node fanoutput.js
 
 here it is following a fanout exchange in rabbitmq for more information about fanout exchanges and exhanges go here https://www.rabbitmq.com/tutorials/amqp-concepts.html
