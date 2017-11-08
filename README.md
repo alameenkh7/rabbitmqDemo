@@ -46,7 +46,7 @@ If you go to rabbitmq management web ui you can see message in respective queue 
 testing second set of input and out put file
 
 run 
-node newtask.js <yourmessage>.....
+node newtask.js <yourmessage>.....         
 node worker.js
 
 here you can see that message will wait for the no of '.' after your message and 
