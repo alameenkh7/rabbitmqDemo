@@ -33,7 +33,7 @@ output file
 2. worker.js
 3. fanoutput.js
 
-type cd server to go to server directory.
+type `cd server` to go to server directory.
 
 Testing first set of input and out put file
 
