@@ -1,21 +1,21 @@
 # rabbitmqDemo
 This is demo to learn rabbitmq
 
-##how to run
+## how to run
 
-1. clone ###this directory
-2. npm install
+1. `git clone git@github.com:alameenkh7/rabbitmqDemo.git`
+2. `npm install`
 
 ## how to test rabbitmq
 
 here I have included default my rabbitmq url in config/config.js if you want to test with your rabbitmq server 
-Install RabbitMQ https://www.rabbitmq.com/download.html
+Install RabbitMQ (https://www.rabbitmq.com/download.html)
 
 ###for getting management plugin 
 
 type this command 
 rabbitmq-plugins enable rabbitmq_management more details https://www.rabbitmq.com/management.html
-The Web UI is located at: http://server-name:15672/ 
+The Web UI is located at: (http://server-name:15672/)
 
 
 and change the config url to dev instead of test. 
